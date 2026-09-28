@@ -15,7 +15,13 @@
 		"tokenLit": {
 			"name": "string.quoted.single.ungrammar",
 			"begin": "'",
-			"end": "'"
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ungrammar",
+					"match": "\\\\['\\\\]"
+			    }
+			]
 		},
 		"nodeName": {
 			"name": "entity.name.type.node.ungrammar",
